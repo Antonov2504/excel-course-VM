@@ -1,0 +1,1 @@
+{"version":3,"file":"main.bundle.css","mappings":";;;AAEA;EACE,sBAHM;AAER,C","sources":["webpack:///./scss/index.scss"],"sourcesContent":["$light: pink;\n\nbody {\n  background-color: $light;\n}\n"],"names":[],"sourceRoot":""}
