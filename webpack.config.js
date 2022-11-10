@@ -10,6 +10,7 @@ module.exports = (env, argv) => {
 
   const getFileName = (ext) =>
     isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`;
+
   const getPlugins = () => {
     const basePlugins = [
       new HtmlWebpackPlugin({
@@ -30,8 +31,10 @@ module.exports = (env, argv) => {
     ];
 
     if (isDev) {
-      basePlugins.push([new ESLintPlugin()]);
+      basePlugins.push(new ESLintPlugin());
     }
+
+    return basePlugins;
   };
 
   return {
